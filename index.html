@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Diri</title>
+    <style>
+        /* CSS untuk tampilan halaman */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f0f8ff;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            padding: 8px;
+            width: 100%;
+        }
+
+        img {
+        width: 150px; /* Sesuaikan dengan ukuran yang diinginkan */
+        height: 150px; /* Pastikan tinggi dan lebar sama */
+        border-radius: 50%;
+        object-fit: cover; /* Memastikan gambar diisi penuh */
+        display: block;
+        margin: 0 auto;
+    }
+        /* Tampilan responsif untuk input form */
+        form div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Media query untuk tampilan lebih kecil */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            table, th, td {
+                font-size: 14px;
+            }
+
+            video {
+                width: 100%;
+            }
+
+            h1, h2 {
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Tag img digunakan untuk menampilkan gambar profil -->
+        <img src="Screenshot_2024-10-09-02-23-41-231-edit_com.miui.videoplayer.jpg" alt="Foto Profil">
+
+        <h1>Profil Diri</h1>
+
+        <!-- Tag table untuk menampilkan informasi dalam bentuk tabel -->
+        <table>
+            <!-- Header tabel menggunakan tag th -->
+            <tr>
+                <th>Informasi</th>
+                <th>Detail</th>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <!-- Menggunakan tag td untuk data tabel -->
+                <td>Mu'Ammar Hannan Najib</td>
+            </tr>
+            <tr>
+                <td>Umur</td>
+                <td>20 Tahun</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>muammar@student.telkomuniversity.ac.id</td>
+            </tr>
+        </table>
+
+        <h2>Video Perkenalan</h2>
+        <!-- Tag video untuk menyematkan video perkenalan -->
+        <video width="100%" controls>
+            <source src="videoplayback.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video tag.
+        </video>
+
+        <h2>Kontak</h2>
+        <!-- Tag form untuk formulir kontak -->
+        <form action="#" method="post">
+            <!-- Tag div untuk mengelompokkan input form -->
+            <div>
+                <!-- Input untuk nama -->
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div>
+                <!-- Input untuk email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <!-- Input untuk pesan -->
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            </div>
+            <!-- Menggunakan button untuk mengirim formulir -->
+            <button type="submit">Kirim</button>
+        </form>
+
+        <h2>Media Sosial</h2>
+        <!-- Tag a untuk link media sosial -->
+        <a href="https://github.com/muammarhannan" target="_blank">GitHub Saya</a>
+    </div>
+</body>
+</html>
